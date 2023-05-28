@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-attachment:local;
+    background-image:linear-gradient(to top, #01171a 0%, #01171a 30%, #055a5a 70%);
+    
+    color: rgb(234, 250, 232);
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    width: 100vw;
+    background-attachment: fixed;
+    background-image:linear-gradient(to top,#01171a 0%, #049595 0%, #01171a 90%);
+    background-clip:inherit ;
+    -webkit-background-clip:unset;
+}
+
+
+.main__contain{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+.input{
+    width: 90%;
+    max-width: 800px;
+    height: 50px;
+    margin: 2rem auto;
+    text-align: center;
+    border-radius: 25px;
+    background-attachment: fixed;
+    background-image:linear-gradient(to top,#01171a 0%, #af69f060 30%, #04959565 70%);
+    background-clip:inherit ;
+    -webkit-background-clip:unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    width: 70%;
+    border: none;
+    border-radius: 12px 0 0 12px;
+    height: 25px;
+    background-color: rgb(227, 250, 225);
+    color: #01171a;
+    text-align: center;
+    
+}
+.btn_search{
+    width: 20%;
+    height: 25px;
+    border-radius: 0 12px 12px 0;
+    border: none;
+    color: rgb(227, 250, 225);
+    border-left: 1px solid white;
+    background-color: rgb(1, 23, 26);
+    font-weight: 400;
+}
+.location__info{
+    width: 100%;
+    min-height: 120px;
+    padding: .5rem;
+    margin: 2rem auto 1rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: .8rem;
+    justify-content: space-between;
+    
+    background-attachment: fixed;
+    background-image:linear-gradient(to top,#01171a86 0%, #af69f054 30%, #049595f1 70%);
+    background-clip:inherit ;
+    -webkit-background-clip:unset;
+}
+.location__info h1{
+    width: 100%;
+    text-align: center;
+}
+.location__info p{
+    width: 33%;
+    text-align: center;
+}
+.getPages{
+    position: relative;
+    display: flex;
+    width: 350px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.btn__pages{
+    width: 2.5rem;
+    height: 2.5rem;
+    position: relative;
+    background-color: transparent;
+    color: aliceblue;
+}
+.op{
+    opacity: 0;
+}
+.residents__contain{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0;
+    padding: 2rem 0;
+}
+.resident__card{
+    width: 90%;
+    max-width: 350px;
+    height: 500px;
+    margin-bottom: 3rem;
+    background-color: rgb(1, 23, 26);
+    position: relative;
+    background-attachment: fixed;
+    background-image:linear-gradient(to top,#01171a 0%, #af69f060 30%, #049595 70%);
+    background-clip:inherit ;
+    -webkit-background-clip:unset;
+}
+.resident__card img{
+    width: 100%;
+    
+}
+.info__status{
+    width: 120px;
+    height: 30px;
+    background-color: rgba(1, 23, 26, 0.66);
+    border-radius: 0 5px 5px 0;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 40px;
+}
+.status{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: .5rem;
+    animation: latent 1.3s infinite linear;
+}
+@keyframes latent {
+    0%{
+        
+    };
+    33%{
+        transform: scale(0.7);
+        opacity: .5;
+    }
+    66%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.7);
+        opacity: .5;
+    }
+}
+.info__resident{
+    padding: 0 .5rem;
+    height: 140px;
+    font-size: .9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.info__resident hr{
+    border: none;
+    background-color: rgb(5,41,46);   
+    height: 2.5px;
+    width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+    .main__contain{
+        width: 80%;
+    }
+    .input{
+        margin: 0 auto;
+        position: relative;
+        top: -27px;
+    }
+    .location__info{
+        font-size: 1rem;
+    }
+    .load{
+        width: 100%;
+        text-align: center;
+        padding: 5rem;
+    }
+    .no_population{
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+        margin-top: -3rem;
+    }
+}
+@media screen and (min-width: 900px) {
+    .residents__contain{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 0;
+    }
+    .resident__card{
+        min-width: 350px;
+    }
+
+}
