@@ -14,11 +14,7 @@ function App() {
       <Main />
  
     <div  className='FooterApp'>
-    <footer> 
-      
-      <h4>By Kattia Contreras | G-25 Academlo</h4>
-      
-      </footer>
+    <footer> <h4>By Kattia Contreras | G-25 Academlo</h4>   </footer>
     </div>
      
     </div>
