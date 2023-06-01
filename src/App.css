@@ -216,4 +216,16 @@ input{
         min-width: 350px;
     }
 
+  .FooterApp {
+    background-image:linear-gradient(to top,#01171a 0%, #049595 0%, #01171a 90%);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:  whitesmoke;
+    position: relative;
+    bottom: 0;
+    box-shadow:  rgb(204, 219, 232) 0px 1px 4px 0px inset;
+  }
+
 }

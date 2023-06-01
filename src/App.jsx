@@ -12,7 +12,17 @@ function App() {
         <img width="100%" src={bg_header} alt="" />
       </header>
       <Main />
+ 
+    <div  className='FooterApp'>
+    <footer> 
+      
+      <h4>By Kattia Contreras | G-25 Academlo</h4>
+      
+      </footer>
     </div>
+     
+    </div>
+    
   )
 }
 
